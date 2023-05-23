@@ -45,7 +45,6 @@ a:visited {
 
 
 body {
-    background-color: hsl(108, 100%, 65%);
     display: flex;
     justify-content: center;
 }
@@ -62,7 +61,7 @@ body {
     width: 100%;
     height: 45px;
     box-shadow: 2px 2px 30px -10px hsl(235, 24%, 19%);
-    background-color: rgb(225, 255, 168);
+    background-color: #fff;
     /* Z 1 ensure that it will remain on top whos zindex value less then 1 */
     z-index: 1;
     justify-content: space-between;
@@ -159,8 +158,6 @@ body {
     flex: .2;
 
     height: 100vh;
-    background-color: hsl(135.69deg 100% 63.32%);
-
     color: white;
     flex-direction: column;
     align-items: center;
@@ -216,64 +213,66 @@ body {
     width: 100%;
     align-items: center;
 }
- 
+
 
 
 
 
 
 .fav-item {
-    display: flex;
-    align-items: center;
     padding: 10px;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .fav-item:hover {
-    background-color: #f5f5f5;
-  }
-  
-  .fav-item-photo {
-    width: 100px;
-    height: 100px;
+    margin: 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+.fav-item-photo {
+    width: 70px;
+    height: 60px;
     margin-right: 10px;
-  }
-  
-  .fav-item-photo img {
+}
+
+.fav-item-photo img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-  }
-  
-  .fav-item-details {
-    flex-grow: 1;
-  }
-  
-  .fav-item-name {
+}
+
+.fav-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fav-item-name {
     font-weight: 400;
     margin-bottom: 5px;
-  }
-  
-  .fav-item-text {
+}
+
+.fav-item-text {
     color: #333;
-  }
-  
-  #fav-like-button {
+}
+
+#fav-like-button {
     display: inline-block;
     background-color: #dc3545;
     color: #fff;
     padding: 0px 10px;
-    border-radius: 5px;
+    border-radius: 1px;
+    text-align: center;
     cursor: pointer;
-  }
-  
-  #fav-like-button:hover {
+}
+
+#fav-like-button:hover {
     background-color: #c82333;
-  }
-  
+}
+
 
 
 
@@ -303,7 +302,6 @@ body {
 
 
 .title {
-    color: rgb(247, 247, 247);
     font-size: 20px;
     font-weight: 400;
     text-align: left;
@@ -367,7 +365,6 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    color: hsl(234, 39%, 85%);
     font-size: 18px;
 
 }
@@ -435,11 +432,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-    background-color: hsl(73, 76%, 26%);
-    color: white;
-    border: 1x solid red;
-
+    align-items: center; 
+    color: rgb(0, 0, 0)!important;
+    border-bottom: 2px solid black;
 
 }
 
@@ -537,7 +532,7 @@ body {
     width: 300px;
     padding: 10px;
     box-shadow: 0 0px 6px rgb(0 0 0 / 10%);
-    background-color: #59ff59;
+    background-color: ghostwhite;
     margin-bottom: 20px;
 }
 
@@ -569,8 +564,9 @@ body {
     display: inline-block;
     background-color: #007bff;
     color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 0px 7px;
+    font-size: 12px;
+    border-radius: 1px;
     cursor: pointer;
 }
 

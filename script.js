@@ -387,8 +387,7 @@ async function showFavMealList() {
                     <img src="${element.strMealThumb}" alt="">
                 </div>
                 <div class="fav-item-details">
-                    <div class="fav-item-name">
-                        <strong>Name: </strong>
+                    <div class="fav-item-name"> 
                         <span class="fav-item-text">
                            ${element.strMeal}
                         </span>
